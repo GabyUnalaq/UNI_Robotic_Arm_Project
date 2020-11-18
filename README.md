@@ -1,2 +1,11 @@
 # Robotic_Arm_Project
-Proiect arma robotica - deschizator de bere
+Main project for the Robotic Arm
+	4LF493
+	
+Programmers:
+ - Iordache Andrei
+ - Ittu Ioan
+ - Patrania Bogdan
+ - Rusu Catalin
+ - Terzian Tigran
+ - Tomuta Gabriel
