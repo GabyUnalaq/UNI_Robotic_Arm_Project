@@ -1,8 +1,8 @@
 #include <Servo.h>
 
 #define pinServo 3
-#define left_butt 5
 #define right_butt 4
+#define left_butt 5
   
 Servo myservo;
 int angle = 90;
