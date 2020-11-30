@@ -9,3 +9,12 @@ Programmers:
  - Rusu Catalin
  - Terzian Tigran
  - Tomuta Gabriel
+
+Simulators:
+ - Manaila Roxana
+ - Stanga Otilia
+ - Voloc Vlad
+ 
+Scribe:
+ - Prundoiu Karina
+ - Voinescu Raul
