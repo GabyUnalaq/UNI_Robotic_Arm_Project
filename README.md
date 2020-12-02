@@ -1,6 +1,6 @@
 # Robotic_Arm_Project
 ### Main project for the Robotic Arm
-#### 	4LF493
+#### 	IESC - AINA - 4LF493 B
 	
 Programmers:
  - Iordache Andrei
