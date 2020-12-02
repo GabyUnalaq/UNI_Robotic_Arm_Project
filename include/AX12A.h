@@ -150,28 +150,28 @@ private:
 	HardwareSerial *varSerial;
 
 public:
-	void begin(long baud, unsigned char directionPin, HardwareSerial *srl); // Face asta
-	void end(void); // FAce cealalta
+	void begin(long baud, unsigned char directionPin, HardwareSerial *srl); //initializeaza servo la banda 1MBps  si pinul directionPin
+	void end(void);
 	
-	int reset(unsigned char ID); // Face mancare
-	int ping(unsigned char ID);  // Prinde Europa FM
+	int reset(unsigned char ID);
+	int ping(unsigned char ID); 
 	
 	int setID(unsigned char ID, unsigned char newID);
 	int setBD(unsigned char ID, long baud);
 	
-	int move(unsigned char ID, int Position);
-	int moveSpeed(unsigned char ID, int Position, int Speed);
-	int setEndless(unsigned char ID,bool Status);
-	int turn(unsigned char ID, bool SIDE, int Speed);
-	int moveRW(unsigned char ID, int Position);
-	int moveSpeedRW(unsigned char ID, int Position, int Speed);
+	int move(unsigned char ID, int Position);//misca cupla la viteza si cuplul maxim
+	int moveSpeed(unsigned char ID, int Position, int Speed);//misca cupla cu o anumit cuplu si viteza 
+	int setEndless(unsigned char ID,bool Status); //seteaza cupla ON/OFF pe pinul ID
+	int turn(unsigned char ID, bool SIDE, int Speed);//misca cupla LEFT/RIGHT cu o anumita viteza
+	int moveRW(unsigned char ID, int Position); //la fel ca move(), aparent
+	int moveSpeedRW(unsigned char ID, int Position, int Speed);//la fel ca moveSpeed(), aparent
 	
 	void action(void);
 	
-	int setTempLimit(unsigned char ID, unsigned char Temperature);
-	int setAngleLimit(unsigned char ID, int CWLimit, int CCWLimit);
-	int setVoltageLimit(unsigned char ID, unsigned char DVoltage, unsigned char UVoltage);
-	int setMaxTorque(unsigned char ID, int MaxTorque);
+	int setTempLimit(unsigned char ID, unsigned char Temperature);//seteaza temperatura maxima la care sitemul lucreaza
+	int setAngleLimit(unsigned char ID, int CWLimit, int CCWLimit);//seteaza unghiul maxim la care se invarte cupla
+	int setVoltageLimit(unsigned char ID, unsigned char DVoltage, unsigned char UVoltage);//seteaza voltajul maxim la care lucreaza cupla
+	int setMaxTorque(unsigned char ID, int MaxTorque);//seteaza cuplul maxim la care lucreaza cupla
 	int setSRL(unsigned char ID, unsigned char SRL);
 	int setRDT(unsigned char ID, unsigned char RDT);
 	int setLEDAlarm(unsigned char ID, unsigned char LEDAlarm);
@@ -184,13 +184,13 @@ public:
 	int lockRegister(unsigned char ID);
 	int RWStatus(unsigned char ID);
 	
-	int readTemperature(unsigned char ID);
-	int readVoltage(unsigned char ID);
-	int readPosition(unsigned char ID);
-	int readSpeed(unsigned char ID);
+	int readTemperature(unsigned char ID);//citeste temperatura
+	int readVoltage(unsigned char ID);//citeste voltajul
+	int readPosition(unsigned char ID);//citeset pozitia cuplei
+	int readSpeed(unsigned char ID);//citeste viteza cuplei
 	int readLoad(unsigned char ID);
 	
-	int torqueStatus(unsigned char ID, bool Status);
+	int torqueStatus(unsigned char ID, bool Status);//afiseaza cuplul
 	int ledStatus(unsigned char ID, bool Status);
 
 	int sendAXPacket(unsigned char *packet, unsigned int length);
