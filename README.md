@@ -15,6 +15,14 @@ Simulators:
  - Stanga Otilia
  - Voloc Vlad
  
-Scribe:
+Scribes:
  - Prundoiu Karina
  - Voinescu Raul
+
+# Informatii Utile:
+Programmers:
+ - [Github Servo AX12A](https://github.com/jumejume1/AX-12A-servo-library)
+ - [AX12 Tutorials Youtube](https://www.youtube.com/playlist?list=PLnZCCNiygoBOkl_U2ZPKhkiyMjctnkFQf)
+ 
+Simulators:
+ - [Tinkercad Robotic Arm](https://www.youtube.com/watch?v=fClGk_mnjMA)
