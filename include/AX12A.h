@@ -150,11 +150,11 @@ private:
 	HardwareSerial *varSerial;
 
 public:
-	void begin(long baud, unsigned char directionPin, HardwareSerial *srl);
-	void end(void);
+	void begin(long baud, unsigned char directionPin, HardwareSerial *srl); // Face asta
+	void end(void); // FAce cealalta
 	
-	int reset(unsigned char ID);
-	int ping(unsigned char ID); 
+	int reset(unsigned char ID); // Face mancare
+	int ping(unsigned char ID);  // Prinde Europa FM
 	
 	int setID(unsigned char ID, unsigned char newID);
 	int setBD(unsigned char ID, long baud);
