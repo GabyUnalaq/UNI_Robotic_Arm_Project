@@ -1,8 +1,36 @@
 /*
- *
- *
- *
- */
+    Info:
+
+    Dynamixel AX-12A de la Robotis este un actuator complet, pentru robotii cu multe articulatii. 
+Oferind acelasi nivel de performanta ca modelul anterior, AX-12A are o constructie externa mai
+avansata si este 100% compatibil cu AX-12+, la o scala de 1:1, cu aceeasi metoda de control.
+
+    Specificatii:
+
+  Greutate: 54.6g
+  Dimensiune: 32mm x 50mm x 40mm
+  Raport de angrenare: 254 : 1
+  Tensiune de operare: 12V
+  Cuplu de calare: 1.5 N.m (12V)
+  Curent de calare: 1.5A
+  Viteza fara sarcina: 59 RPM (12V)
+  Motor
+  Unghi minim de control: aprox. 0.29 grade x 1,024
+  Raza de operare: in modul actuator - 300 grade; in modul de rotire - intoarcere nesfarsita
+  Tensiune de operare: 9~12V (tensiune recomandata: 11.1V)
+  Curent maxim: 900mA
+  Curent standby: 50mA
+  Temperatura de operare: -5C ~ 70C
+  Semnal de comanda: pachet digital
+  Protocol: Comunicare seriala asincrona half-duplex (8 biti, 1 oprire, fara paritate)
+  Legatura (fizica): TTL Level Multi Drop (conector pentru legare in serie)
+  ID: 254 ID (0~253)
+  Rata binara: 7843bps ~ 1 Mbps
+  Functii de feedback: pozitie, temperatura, sarcina, tensiune, etc.
+  Material: plastic tehnic
+  Senzor de pozitie: potentiometru
+  Setare implicita: ID #1 (1 Mbps)
+*/
 
 #ifndef AX12A_h
 #define AX12A_h
