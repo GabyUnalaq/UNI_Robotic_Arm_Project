@@ -2,7 +2,7 @@
 ### Main project for the Robotic Arm
 #### 	IESC - AINA - 4LF493 B
 	
-Programmers:
+### Programmers:
  - Iordache Andrei
  - Ittu Ioan
  - Patrania Bogdan
@@ -10,17 +10,17 @@ Programmers:
  - Terzian Tigran
  - Tomuta Gabriel
 
-Simulators:
+### Simulators:
  - Manaila Roxana
  - Stanga Otilia
  - Voloc Vlad
  
-Scribes:
+### Scribes:
  - Prundoiu Karina
  - Voinescu Raul
 
 # Utils:
-Robot:
+### Robot:
  - Cupla 1:
  	- Rotatie in jurul axei Z
 	- Pin 4
@@ -40,9 +40,9 @@ Robot:
 	- Cupla 3 - Punct de interes: 6 cm
  - Directional PIN: 10
  
-Programmers:
+### Programmers:
  - [Github Servo AX12A](https://github.com/jumejume1/AX-12A-servo-library)
  - [AX12 Tutorials Youtube](https://www.youtube.com/playlist?list=PLnZCCNiygoBOkl_U2ZPKhkiyMjctnkFQf)
  
-Simulators:
+### Simulators:
  - [Tinkercad Robotic Arm](https://www.youtube.com/watch?v=fClGk_mnjMA)
