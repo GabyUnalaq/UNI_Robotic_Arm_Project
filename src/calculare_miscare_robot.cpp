@@ -4,8 +4,6 @@
 
 #define pi 3.14159265358979323846
 
-using namespace std;
-
 float angle_check(float angle);
 
 float to_robot(float angle);
@@ -19,6 +17,7 @@ float** multiply_matrix(float ** a, float ** b);
 
 void afisare_matrice(float** matrix);
 
+/// Programul principal
 int main(){
     float angle_1 = 150;
     float angle_2 = 150;
@@ -46,12 +45,13 @@ int main(){
     final_matrix = multiply_matrix(final_matrix, matrix_2);
     final_matrix = multiply_matrix(final_matrix, matrix_3);
 
-    cout << "Matrice finala: " << endl;
+    std::cout << "Matrice finala: " << std::endl;
     afisare_matrice(final_matrix);
 
     return 0;
 }
 
+/// Verifica daca unghiurile sunt in raza de miscare e robotului
 float angle_check(float angle){
     if (angle < 0)
         return 0.0;
@@ -60,14 +60,17 @@ float angle_check(float angle){
     return angle;
 }
 
+/// Transforma din unghiul acceptat de program in cel in care prelucram
 float to_program(float angle){
     return angle - 150;
 }
 
+/// Transforma din unghiul de prelucrare in cel acceptat de robot
 float to_robot(float angle){
     return angle + 150;
 }
 
+/// Returneaza o matrice de transformare construita cu unghiul si distanta date ca parametrii
 float** calc_matrix(float angle, float dist){
     //float matrix[3][3] = {{cos(angle), -sin(angle), 0},
     //                      {sin(angle), cos(angle), dist},
@@ -105,14 +108,17 @@ float** calc_matrix(float angle, float dist){
     return matrix;
 }
 
+/// Face transformare din radiani in grade
 float rad_to_degree(float angle){
     return (angle * (180/pi));
 }
 
+/// Face transformare din grade in radiani
 float degree_to_rad(float angle){
     return (angle * (pi/180));
 }
 
+/// Face inmultirea a doua matrici de 3/3, returnand rezultatul ca o matrice de 3/3
 float** multiply_matrix(float ** a, float ** b){
     float** mul = 0;
     mul = new float*[3];
@@ -134,10 +140,11 @@ float** multiply_matrix(float ** a, float ** b){
     return mul;
 }
 
+/// Afiseaza o matrice de 3/3
 void afisare_matrice(float** matrix){
     for (int i=0; i<3; i++){
         for (int j=0; j<3; j++)
-            cout << matrix[i][j] << ' ';
-        cout << endl;
+            std::cout << matrix[i][j] << ' ';
+        std::cout << std::endl;
     }
 }
