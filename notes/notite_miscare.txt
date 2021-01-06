@@ -1,0 +1,17 @@
+Miscare initial - 1: rotatie
+ - centru in (0, 23.8)
+ - rotire: 90 grade
+
+Miscare 1 - 2: translatie pe axa y
+ - distanta: -8.8
+
+Miscare 2 - 3: translatie pe axa x
+ - distanta: aprox 4
+ - calculare: dist_sticla - lung_seg_final
+
+Miscare 3 - 4: rotatie
+ - centru in (10, 15)
+ - rotire: 30-45 grade
+
+Miscare 4 - final: intorcere
+ - toate unghiurile = pozitia initiala
