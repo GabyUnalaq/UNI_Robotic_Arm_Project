@@ -31,4 +31,4 @@
 ### Simulators:
  - [Tinkercad Robotic Arm](https://www.youtube.com/watch?v=fClGk_mnjMA)
  - [MatLab Robotic Arm](https://youtu.be/BLP2Z_Uwf5g)
- - [Simulare Desmos](https://www.desmos.com/calculator/ne0ifhemwb)
+ - [Simulare Desmos](https://www.desmos.com/calculator/pgotsaxh5x)
