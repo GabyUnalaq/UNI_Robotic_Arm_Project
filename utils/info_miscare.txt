@@ -1,17 +1,20 @@
-Miscare initial - 1: translatie pe axa y
- - distanta: -4
+Miscare 0 - 1: translatie pe axa y
+ - distanta: efy -> st_h - 0.2
 
 Miscare 1 - 2: rotatie
- - centru in (0, 25.8)
- - rotire: 90 grade
+ - centru in cupla 3
+ - rotire: +90 grade
 
 Miscare 2 - 3: translatie pe axa x
- - distanta: aprox 4
- - calculare: dist_sticla - lung_seg_final
+ - distanta: efx -> st_d - 1
 
 Miscare 3 - 4: rotatie
- - centru in (10, 15)
- - rotire: 30-45 grade
+ - centru in (efx, efy)
+ - rotire: -35
+ 
+Miscare 4 - 5: rotatie
+ - centru in cupla 3
+ - rotire: +125
 
-Miscare 4 - final: intorcere
- - toate unghiurile = pozitia initiala
+Miscare 5 - 0: intorcere
+ - functie speciala
