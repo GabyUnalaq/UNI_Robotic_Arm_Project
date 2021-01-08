@@ -23,6 +23,7 @@
 ### Robot:
  - [Info Robot](utils/info_robot.txt)
  - [Info Miscare](utils/info_miscare.txt)
+ - [Poza miscare](utils/miscare_robot.png)
  
 ### Programmers:
  - [Github Servo AX12A](https://github.com/jumejume1/AX-12A-servo-library)
