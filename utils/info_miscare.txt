@@ -1,9 +1,9 @@
-Miscare initial - 1: rotatie
- - centru in (0, 23.8)
- - rotire: 90 grade
+Miscare initial - 1: translatie pe axa y
+ - distanta: -4
 
-Miscare 1 - 2: translatie pe axa y
- - distanta: -8.8
+Miscare 1 - 2: rotatie
+ - centru in (0, 25.8)
+ - rotire: 90 grade
 
 Miscare 2 - 3: translatie pe axa x
  - distanta: aprox 4
