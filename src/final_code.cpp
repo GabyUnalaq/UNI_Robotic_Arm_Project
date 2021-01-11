@@ -116,9 +116,9 @@ void loop(){
     getch();
 
     /// Miscare 5 - 0: intoarcere
-    reinstate_arm(efx, efy, efa);
-    calc_angles(efx, efy, efa);
-    angle_writing();
+    //reinstate_arm(efx, efy, efa);
+    //calc_angles(efx, efy, efa);
+    //angle_writing();
 
 }
 
@@ -162,10 +162,9 @@ void calc_angles(float efx, float efy, float efa){
 
 /// Transforma unghiurile din sistemul programului de coordonate in cele ale cuplelor
 void angle_to_servo(float &u1, float &u2, float &u3){
-    /// TODO
     u1 += 60;
-    u2 -= 150;
-    u3 -= 150;
+    u2 -= 210;
+    u3 -= 210;
 
     while (u1 < 0)
         u1 += 360;
@@ -203,7 +202,7 @@ void pos_writing(){
     std::cout << "J3 (" << c3x << ';' << c3y << ')' << std::endl;
 }
 
-void reinstate_arm(float &efx, float &efy, float &efa){
+void reinstate_arm(float &efx, float &efy, float &efa){ /// TODO
     /// Unghi 1
     for (float i = a1; i<90; i+=rot_step){
         a1 = i;
