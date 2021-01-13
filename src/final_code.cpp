@@ -54,6 +54,10 @@ void loop(){
     efy = 29.8;
     calc_angles(efx, efy, efa);
     float aux_mov;
+    angle_writing();
+    pos_writing();
+    std::cout << "Apasa orice ca sa mergi mai departe..";
+    getch();
 
     /// Miscarea 0 - 1: miscare pe axa y
     aux_mov = efy;
@@ -63,6 +67,7 @@ void loop(){
         std::cout << "Miscarea 0 - 1: miscare pe axa y" << std::endl;
         calc_angles(efx, efy, efa);
         angle_writing();
+        pos_writing();
     }
     std::cout << "Apasa orice ca sa mergi mai departe..";
     getch();
@@ -76,6 +81,7 @@ void loop(){
         efy = c3y + sin(degree_to_rad(efa)) * d3;
         calc_angles(efx, efy, efa);
         angle_writing();
+        pos_writing();
     }
     std::cout << "Apasa orice ca sa mergi mai departe..";
     getch();
@@ -87,6 +93,7 @@ void loop(){
         std::cout << "Miscarea 2 - 3: miscare pe axa x" << std::endl;
         calc_angles(efx, efy, efa);
         angle_writing();
+        pos_writing();
     }
     std::cout << "Apasa orice ca sa mergi mai departe..";
     getch();
@@ -98,6 +105,7 @@ void loop(){
         std::cout << "Miscarea 3 - 4: rotatie" << std::endl;
         calc_angles(efx, efy, efa);
         angle_writing();
+        pos_writing();
     }
     std::cout << "Apasa orice ca sa mergi mai departe..";
     getch();
@@ -111,6 +119,7 @@ void loop(){
         efy = c3y + sin(degree_to_rad(efa)) * d3;
         calc_angles(efx, efy, efa);
         angle_writing();
+        pos_writing();
     }
     std::cout << "Apasa orice ca sa mergi mai departe..";
     getch();
@@ -188,11 +197,15 @@ void angle_writing(){
     u2 = a2;
     u3 = a3;
     angle_to_servo(u1, u2, u3);
+
+    int c1 = int((512 * u1) / 150);
+    int c2 = int((512 * u2) / 150);
+    int c3 = int((512 * u3) / 150);
+
     std::cout << "Unghiuri:" << std::endl;
-    std::cout << "a1 = " << u1 << std::endl;
-    std::cout << "a2 = " << u2 << std::endl;
-    std::cout << "a3 = " << u3 << std::endl;
-    usleep(100000);
+    std::cout << "a1 = " << c1 << std::endl;
+    std::cout << "a2 = " << c2 << std::endl;
+    std::cout << "a3 = " << c3 << std::endl;
 }
 
 void pos_writing(){
@@ -200,6 +213,7 @@ void pos_writing(){
     std::cout << "J1 (" << c1x << ';' << c1y << ')' << std::endl;
     std::cout << "J2 (" << c2x << ';' << c2y << ')' << std::endl;
     std::cout << "J3 (" << c3x << ';' << c3y << ')' << std::endl;
+    usleep(100000);
 }
 
 void reinstate_arm(float &efx, float &efy, float &efa){ /// TODO
