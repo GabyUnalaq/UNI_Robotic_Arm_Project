@@ -1,6 +1,4 @@
-#include <iostream>
 #include <math.h>
-#include <cmath>
 #include <stdlib.h>
 #include <unistd.h>
 #include "Arduino.h"
@@ -8,7 +6,7 @@
 
 #define pi 3.14159265358979323846
 #define DIRECTION_PIN (10u)
-#define BAUD_RATE (1000000u1)
+#define BAUD_RATE (1000000ul)
 #define CUPLA_1 (4u)
 #define CUPLA_2 (5u)
 #define CUPLA_3 (3u)
@@ -174,13 +172,18 @@ void angle_writing(){
     u2 = a2;
     u3 = a3;
     angle_to_servo(u1, u2, u3);
-    ax12a.move(CUPLA_1, u1);
-    ax12a.move(CUPLA_2, u2);
-    ax12a.move(CUPLA_3, u3);
+    
+    int c1 = int((512 * u1) / 150);
+    int c2 = int((512 * u2) / 150);
+    int c3 = int((512 * u3) / 150);
+    
+    ax12a.move(CUPLA_1, c1);
+    ax12a.move(CUPLA_2, c2);
+    ax12a.move(CUPLA_3, c3);
     /*
-    ax12a.moveSpeed(CUPLA_1, u1, 50);
-    ax12a.moveSpeed(CUPLA_2, u2, 50);
-    ax12a.moveSpeed(CUPLA_3, u3, 50);
+    ax12a.moveSpeed(CUPLA_1, c1, 50);
+    ax12a.moveSpeed(CUPLA_2, c2, 50);
+    ax12a.moveSpeed(CUPLA_3, c3, 50);
     */
     delay(1000);
 }
